@@ -23,3 +23,12 @@ Route::group(['prefix' => 'v1','middleware' => 'auth:api'], function () {
     //Please do not remove this if you want adminlte:route and adminlte:link commands to works correctly.
     #adminlte_api_routes
 });
+
+
+Route::resource('etiquetas', 'EtiquetaAPIController');
+
+Route::resource('generos', 'GeneroAPIController');
+
+Route::resource('juegos', 'JuegoAPIController');
+
+Route::resource('juegos', 'JuegoAPIController');

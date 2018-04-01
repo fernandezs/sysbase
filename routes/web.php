@@ -49,3 +49,11 @@ Route::get('prueba/pdf', function (\App\Extensiones\Fpdf $fpdf) {
     $fpdf->Output();
     exit();
 });
+
+Route::resource('etiquetas', 'EtiquetaController');
+
+Route::resource('generos', 'GeneroController');
+
+Route::resource('juegos', 'JuegoController');
+
+Route::resource('juegos', 'JuegoController');
